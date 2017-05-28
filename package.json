@@ -1,6 +1,6 @@
 {
   "name": "unroll-it",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "Helper for writing data driven / parametrized tests with Mocha",
   "main": "index.js",
   "repository": "https://github.com/robertknight/unroll-it",
