@@ -1,0 +1,22 @@
+{
+  "name": "unroll-it",
+  "version": "0.9.0",
+  "description": "Helper for writing data driven / parametrized tests with Mocha",
+  "main": "index.js",
+  "repository": "https://github.com/robertknight/unroll-it",
+  "author": "Robert Knight <robertknight@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.0.0",
+    "mocha": "^3.4.2",
+    "sinon": "^2.3.2"
+  },
+  "files": [
+    "index"
+  ],
+  "scripts": {
+    "preversion": "yarn test",
+    "postversion": "git push && git push --tags && npm publish",
+    "test": "mocha"
+  }
+}
