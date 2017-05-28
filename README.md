@@ -39,11 +39,12 @@ in the test case may also be referenced in the `description`.
 Here is a simple synchronous test:
 
 ```js
+var { assert } = require('chai');
 var unroll = require('unroll-it');
 
-describe('upperCase', () => {
+describe('String#toUpperCase', () => {
   unroll('should return #output given #input', (testCase) => {
-    assert.equal(upperCase(testCase.input), testCase.output);
+    assert.equal(testCase.input.toUpperCase(), testCase.output);
   },[{
     input: 'john',
     output: 'JOHN',
